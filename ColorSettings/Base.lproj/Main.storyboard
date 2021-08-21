@@ -110,9 +110,6 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="a65-YP-iaA" firstAttribute="width" secondItem="QEk-5n-oqI" secondAttribute="width" id="3K3-a5-U3m"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
