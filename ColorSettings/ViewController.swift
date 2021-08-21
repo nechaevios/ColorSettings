@@ -18,11 +18,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         colorView.layer.cornerRadius = 22
-
     }
 
     @IBAction func sliderChanged(_ sender: UISlider) {
