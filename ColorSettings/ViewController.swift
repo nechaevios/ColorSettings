@@ -24,15 +24,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sliderChanged(_ sender: UISlider) {
-        redLabel.text = String(format: "%.2f", redSlider.value)
-        greenLabel.text = String(format: "%.2f", greenSlider.value)
-        blueLabel.text = String(format: "%.2f", blueSlider.value)
-        
         let redColorValue = CGFloat(round(Double(redSlider.value) * 100) / 100)
         
         let greenColorValue = CGFloat(round(Double(greenSlider.value) * 100) / 100)
     
         let blueColorValue = CGFloat(round(Double(blueSlider.value) * 100) / 100)
+        
+        redLabel.text = "\(redColorValue)"
+        greenLabel.text = "\(greenColorValue)"
+        blueLabel.text = "\(blueColorValue)"
         
         colorView.backgroundColor = UIColor(red: redColorValue, green: greenColorValue, blue: blueColorValue, alpha: 1.0)
     }
